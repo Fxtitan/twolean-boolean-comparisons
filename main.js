@@ -1,9 +1,60 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
+const moreThan5 = (num) => {
+  return num > 5;
+}
 
+const topScore = (iAmBigger, iAmSmaller) => {
+  return iAmBigger > iAmSmaller;
+}
 
+let isInDanger = (grade) => {
+  return grade >= 60 && grade <= 71;
+}
 
+const isCoasting = (grade) => {
+  return grade >= 72 && grade <= 83;
+}
+
+const isSucceeding = (grade) => {
+  return grade >= 84 && grade <= 92;
+}
+
+const isFailing = (grade) => {
+  return grade < 60;
+}
+
+const isAcing = (grade) => {
+  return grade > 92;
+}
+
+const isStudent = (iGoHere) => {
+  return iGoHere === 'student';
+}
+
+const isTeacher = (youGuys) => {
+  return youGuys === 'teacher';
+}
+
+const isAdmin = (theyAreMy) => {
+  return theyAreMy === 'admin';
+}
+
+const isElementary = (myDearWatson) => {
+  return myDearWatson === 'elementary';
+}
+
+const areDifferentPeople = (name, name2) => {
+  return name != name2;
+}
+
+const isMiddleSchoolTeacher = (areYouMy, imBetween) => {
+  return areYouMy === 'teacher' && imBetween >=6 && imBetween <= 8;
+}
+const notAnElementarySchoolAdministrator = (string, string2) => {
+  return string != 'elementary' || string2 != 'admin';
+}
 
 
 /********************************************************************************************
@@ -82,7 +133,7 @@ module.exports = {
   isTeacher,
   isAdmin,
   isElementary,
-  differentPeople,
+  areDifferentPeople,
   notAnElementarySchoolAdministrator,
   isMiddleSchoolTeacher,
 }
